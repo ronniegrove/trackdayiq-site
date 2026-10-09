@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrackDayIQ Support</title>
+  <meta name="description" content="Help with TrackDayIQ: getting a session in, common questions, and how to reach us." />
+  <style>
+    :root { --bg: #0B1218; --panel: #121b23; --text: #eef3f7; --muted: #a9b6c2; --faint: #7d8a96; --accent: #3fb8f0; --line: #22303b; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f6f8fa; --panel: #ffffff; --text: #0f1720; --muted: #3d4a56; --faint: #5f6b76; --accent: #0a76b0; --line: #dde3e8; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font: 400 17px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    .date { color: var(--faint); font-size: 14px; margin: 0 0 24px; }
+    .summary { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+    .summary ul { margin: 0; padding-left: 20px; }
+    .summary li { margin: 4px 0; }
+    a { color: var(--accent); }
+    code { font-size: 15px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>TrackDayIQ Support</h1>
+  <p class="date">Help with the app, and how to reach us</p>
+
+  <div class="summary">
+    <p><strong>Contact:</strong> through <a href="https://github.com/ronniegrove">github.com/ronniegrove</a>.</p>
+    <p>Say which phone you use, the app's version (at the foot of Settings), and what you tapped
+      and saw. If it is about one session, the logger it came from helps too. Do not send the
+      session itself unless we ask.</p>
+  </div>
+
+  <h2>Getting a session into the app</h2>
+  <ul>
+    <li><strong>From a file.</strong> On the Sessions tab, under “Open a file”, choose a session:
+      an AiM <code>.xrk</code> or <code>.xrz</code>, a Race Studio CSV, or a CSV from another logger.</li>
+    <li><strong>From an AiM logger.</strong> Join the logger's own Wi-Fi network on your phone, then
+      take sessions off it from the Sessions tab. The app asks for local network access for this.</li>
+    <li><strong>From a RaceBox.</strong> Connect over Bluetooth from the Sessions tab and choose the rides to copy.</li>
+    <li><strong>With the phone itself.</strong> Record from the Sessions tab. Allow location when asked;
+      recording carries on with the screen locked.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+  <p><strong>My file is greyed out or will not open.</strong> The app reads AiM <code>.xrk</code> and
+    <code>.xrz</code> files and CSV files. It does not read Race Studio 2's <code>.drk</code> files:
+    export the session as CSV from Race Studio instead.</p>
+  <p><strong>The corners are numbered Turn 1, Turn 2… and those are not my circuit's numbers.</strong>
+    At a circuit the app has no corner names for yet, turns are numbered in the order they come from
+    the start line. The session's notes say when that is the case.</p>
+  <p><strong>There is no aerial image under my lap.</strong> Tap “Get aerial image” on the Telemetry
+    tab while you are online. It is fetched once and kept on your phone. Public imagery covers the
+    continental United States only; elsewhere you can add an image of your own.</p>
+  <p><strong>Lap times from my phone differ a little from my logger's.</strong> A phone fixes its
+    position once a second, a logger ten times or more. Expect phone lap times to agree to within
+    a few hundredths of a second, and corner detail to be coarser.</p>
+  <p><strong>Where is my data?</strong> On your phone, and nowhere else. See the
+    <a href="privacy.html">privacy policy</a>.</p>
+  <p><strong>How do I remove everything?</strong> Delete a session in the app to remove it; delete the
+    app to remove all it stored.</p>
+
+  <h2>Riding safely</h2>
+  <p>TrackDayIQ describes what happened on track. It is not coaching and not a safety device. Do not
+    operate the phone while riding.</p>
+</main>
+</body>
+</html>
